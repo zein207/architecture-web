@@ -21,3 +21,14 @@ navbarList.addEventListener('click', () => {
     navbarTitle.classList.remove('no-display');
     btnIcon.classList.replace('fa-times', 'fa-bars');
 })
+
+
+//Parallax Effect
+
+const parallax = document.getElementById('parallax');
+
+window.addEventListener('scroll', () => {
+    let scrollPosition = window.pageYOffset;
+
+    parallax.style.transform = `translateY(${scrollPosition * 0.7}px)`
+})
